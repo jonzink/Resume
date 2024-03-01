@@ -1,0 +1,189 @@
+\documentclass[margin,line, 12pt]{res}
+
+\topmargin=-0.5in    % Make letterhead start about 1 inch from top of page
+\textheight=10in  % text height can be bigger for a longer letter
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.5in
+\itemsep=0in
+\parsep=0in
+
+\nofiles
+
+% if using pdflatex:
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight}
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0.05in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0.0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\renewcommand{\familydefault}{\sfdefault}
+%\usepackage[sfdefault, light, condensed]{roboto}
+\usepackage[light,condensed]{iwona}
+\usepackage[T1]{fontenc}
+\usepackage[colorlinks=false,urlcolor=magenta,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{setspace}
+
+
+
+
+
+
+\begin{document}
+\begin{spacing}{1.0}	
+
+\name{{\huge\bf Jon Zink, Ph.D}\vspace*{.1in}}
+
+\begin{resume}
+\vspace*{-2mm}
+\section{Basic\\Information}
+\begin{tabular}{@{}p{4.75in}p{4in}}
+  (248)909-1107 &  \href{https://www.jonzink.com}{jonzink.com}  \\
+  \href{mailto:jonzink123@gmail.com}{jonzink123@gmail.com} & \href{https://github.com/jonzink}{github.com/jonzink} \\
+  
+  & \href{https://www.linkedin.com/in/jon-zink-phd/}{linkedin.com/in/jon-zink-phd} \\
+\end{tabular}
+
+% \vspace{-3mm}
+% Collaborative, scientific thinker passionate about discovering and communicating nuanced insight from complicated data. Background includes: open-source contributions, project leadership, computer vision, traditional machine learning, and working with large, heterogeneous, often noisy datasets.
+% \vspace*{-2mm}
+
+\section{Professional \newline Experience}
+% \textbf{Activision Publishing, Inc.} \hfill Boulder, Colorado\newline
+% \textit{Senior Machine Learning Engineer} \hfill \textbf{January, 2021 - Present}\newline
+% As part of the Advanced Analytics and Machine Learning (ML) team, I support all ML initiatives for the Call of Duty and Warzone franchises. This includes being involved in early concept designs through the productionalization of mature models and stakeholder management. Below are selected highlights from this very diverse role:
+%     \begin{list2}
+% %     	\vspace*{-5mm}
+%       \item Designed, built, maintained, and improved ML infrastructure. This includes tool developement like autoML, CI/CD (Jenkins), model tracking and management (MLflow) and orchestration (Airflow).
+%       \item Crafted and implimented policy around external data ingestion and data product retention for both my internal team and for sharing across the organization.
+%       \item Designed, built, and maintained near-realtime applications (via Spark streaming) to combat in-game cheating and other malicious behavior. Typical time-to-action is in the low 10s of seconds.
+%       \item Lead the transition of ML infrastructure from AWS to GCP/GCS.
+%       \item Created ML models to provide insights into customer conversion, churn, and behavioral segmentation. This leveraged survival analysis, clustering, as well as tree-based and linear methods.
+%       \item Supervised junior team members to design and develope recommendation systems to be productionalized in an upcoming title.
+%     \end{list2}
+% \vspace*{-2mm}
+%
+% \textbf{Insight Data Science} \hfill New York, New York\newline
+% \textit{Fellow} \hfill \textbf{January, 2020 - 2021}\newline
+%     \begin{list2}
+%     	\vspace*{-5mm}
+%       \item Helped optimize the way NYC health inspectors perform restaurant inspections in order to reduce the time critical health violations remain unaddressed.
+%     	\item Trained a random forest in Python to prioritize NYC restaurant inspections based on environmental variables and their past inspection histories and provided the results to NYC through an API deployed on AWS.
+%     	\item Resulted in NYC inspectors identifying $\sim$2.5\% more violations in the first half of an inspection window,  leading to critical violations being discovered up to 7 days earlier than by the current approach implemented by NYC.
+%     \end{list2}
+% \vspace*{-2mm}
+
+\textbf{California Institute of Technology} \hfill \newline
+\textit{NASA Hubble Postdoctoral Fellow} \hfill \textbf{September, 2021 - Present}\newline
+    \begin{list2}
+    	\vspace*{-5mm}
+    	\item Extracted a novel population trend with 99.99\% confidence from a sparse exoplanet dataset through meticulous accounting of sample completeness and reliability. This ground-breaking work showed that planets are not uniformly distributed about the Milky-way galaxy and was highlighted in a \href{https://exoplanets.nasa.gov/news/1768/discovery-alert-on-our-galaxys-outskirts-a-poverty-of-planets/}{NASA press release}.
+	
+	\item Identified an intra-system correlation in giant planet systems using Bayesian hierarchical modeling. This work resolved a 30 year old mystery on the origin of Hot Jupiters.
+	    	
+	\item Contributed to open source, telescope operation, Python software through bug fixes and feature additions: see \href{https://github.com/California-Planet-Search/KPF-CPS}{KPF pipeline} on GitHub.
+	
+	\item Lead and coordinated team of 16 scientists to perform quality control tasks; deliver science products; and produce peer-reviewed publications.
+
+	
+	\end{list2}		
+	
+\section{Projects}
+	\begin{list2}
+	
+	\item Created a fully autonomous Python algorithm capable of searching 5 TB of noisy time-series data to identify planet signals with 94\% reliability. This peer-reviewed work identified 372 new planets (a 7\% increase in the total known population) and was highlighted in \href{https://www.forbes.com/sites/jamiecartereurope/2021/06/11/we-found-372-new-alien-planets-using-a-long-dead-telescope-say-scientists/}{Forbes} and \href{https://www.newsweek.com/astronomers-discover-366-new-worlds-gas-giants-kepler-k2-exoplanets-nasa-1653254}{Newsweek}.
+	
+	\item Produced a Pip installable Python software package able to parse statistical and instrumental fluctuations from exoplanet signals in time-series data: see \href{https://github.com/jonzink/EDI_Vetter_unplugged}{EDIunplugged} on Github.
+	
+	\item Implemented random forest regression to characterize $\sim200,000$ stars with limited available data, given a training set of $\sim25,000$ well characterized stars, resulting in a highly cited a peer-reviewed publication.
+	 
+	% \item Increased the efficiency by 10x of open source software through the identification of calculations redundancies, enabling long-term integrations.
+	
+	% \item Exploited ineffeicny in UCLA cluster scheduling
+	
+	\item Developed forward modeling software in Python and R (\href{https://github.com/jonzink/ExoMult}{ExoMult}), able to account for intra-system correlations and sample biases. This work produced an estimate for the occurrence of an Earth-like planet around a given star, which reduced the uncertainty of previous work by 50\%.  
+	
+	\item Derived Poisson point process expansion, which addressed sample bias issues attributed to the order in which planets were detected within a given dataset. This publication resolved a mysterious over abundance of single planet systems, which had beset researcher for a decade.
+	
+	\item Produced novel likelihood function for forward modeling, using the Anderson-Darling EDF and a modified Poisson statistic, which enabled the algorithm to converge on a solution 10X faster than competing software.    
+	
+	\item Awarded \$300k NASA grant for independent research.
+	
+      
+    \end{list2}
+\vspace*{-2mm}
+
+
+% \textbf{Dept. of Physics and Astronomy, Texas A\&M University} \hfill College Station, Texas\newline
+% \textit{Ph.D Candidate} \hfill \textbf{August, 2010 - 2016}\newline
+%     \begin{list2}
+%     	\vspace*{-5mm}
+%       \item Demonstrated that measurements from a planned large observation campaign could be improved by up to a factor of 3 over traditional statistical methods through the use of machine learning.
+%       \item Implemented these machine learning methods and produced reliable results in a pilot survey of the real sky and under real-world conditions.
+%     	% \item Collaborated with group members both in person, and through collaborative tools (e.g., GitHub, SVN).
+%     	% \item Presented scientific results in high-impact, astrophysical journals and at international conferences.
+%     \end{list2}
+% \vspace*{-2mm}
+
+% \textbf{The University of Tennessee}, Knoxville, Tennessee USA\newline
+% \textit{Master's Candidate} \hfill \textbf{August, 2007 - 2009}\newline
+%     \begin{list2}
+%     	\vspace*{-5mm}
+%       \item Implemented a C-based pipeline to process hundreds of GBs of simulation results. Including a computer vision algorithm to automatically analyze and compare results to expected targets.
+%       \item Optimized simulation parameters using a genetic algorithm based search utilizing HPC (100k+ core) systems at the National Center for Computational Science, part of Oak Ridge National Laboratory
+%     \end{list2}
+% \vspace*{-3mm}
+
+% \section{Awesome Projects}
+% \textbf{Using Imaging to Infer Galaxy Properties}\newline
+%     \begin{list2}
+%     	\vspace*{-5mm}
+%       \item Predicted galaxy chemical composition with $\sim$5\% error from pseudo-three color imaging, a result better than other current, similar efforts in the literature. Leveraged CNNs to analyze $\sim$150,000 images of galaxies.
+%       \item Project start to publication: 4 months (typically $\sim$1.5 years). See: \href{https://github.com/boada/galaxy-cnns}{github.com/boada/galaxy-cnns}.
+%     \end{list2}
+%     \vspace*{-3mm}
+
+% \textbf{Predicting Tournament Performance in Warmachine}\newline
+%     \begin{list2}
+%     	\vspace*{-5mm}
+%     	\item Created an \href{https://en.wikipedia.org/wiki/Elo_rating_system}{Elo} based model to forecast the results of upcoming tournaments and identify potential upsets.
+%     	\item Integrated predictions into a local community ranking system and forecasted $\sim$1800 tournament game results of the popular tabletop game using Python (e.g., Pandas).
+%     \end{list2}
+% \vspace*{-1mm}
+
+\section{Skills}
+\textbf{Machine Learning:} Linear Models, Random Forest, SVM, PCA, Clustering, and Survival Analysis\\
+% \textbf{CI/CD:} Jenkins, Airflow, Docker\\
+\textbf{Statistical Methods:} Bayesian Analysis, Time-Series Analysis, Hypothesis Testing, Error Analysis, Monte Carlo Methods, Forward Modeling, EDF Testing, and Order Statistics\\
+\textbf{Software and Computing:} Open Source Contributor, Python, R, C++, Java, SQL, HTML, and Javascript \\
+% \textbf{Leadership:} Experience organizing and leading workshops and collaboration meetings, Teaching and mentoring junior team members, Eagle Scout. \\
+\vspace*{-7mm}
+% \noindent\rule{8cm}{0.4pt}
+
+
+%section for two column education
+\section{Education}
+
+\begin{tabular}{@{}p{3in}p{3in}}
+  \textbf{University of California}, Los Angeles
+  \begin{list2}
+  	\item Ph.D, Astrophysics, 2021
+	\item B.S., Astrophysics, 2014
+  \end{list2} &
+\end{tabular}
+\vspace*{-4mm}
+\end{spacing}
+
+
+\end{resume}
+\end{document}
