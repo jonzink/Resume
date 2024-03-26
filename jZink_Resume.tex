@@ -33,6 +33,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[colorlinks=false,urlcolor=magenta,citecolor=blue,linkcolor=blue]{hyperref}
 \usepackage{setspace}
+\usepackage[dvipsnames]{xcolor}
 
 
 
@@ -53,9 +54,11 @@
   
   & \href{https://www.linkedin.com/in/jon-zink-phd/}{linkedin.com/in/jon-zink-phd} \\
 \end{tabular}
-\vspace*{-0.2in}
+% \vspace*{-0.2in}
 
-% \vspace{-3mm}
+\vspace{-3mm}
+\textbf{\textit{\color{RoyalBlue} Computational astrophysicist with a proven history of using statistical analysis to characterize exoplanet systems looking for a Data Science position in a mid-sized data-centric company.}}
+\vspace{-3mm}
 % Collaborative, scientific thinker passionate about discovering and communicating nuanced insight from complicated data. Background includes: open-source contributions, project leadership, computer vision, traditional machine learning, and working with large, heterogeneous, often noisy datasets.
 
 \section{Professional \newline Experience}
@@ -88,20 +91,20 @@
     \begin{list2}
     	\vspace*{-5mm}
 	
-	\item Led and coordinated team of 16 scientists, including junior researchers, to perform quality control tasks; deliver science products; and produce peer-reviewed publications.
+	\item Led and coordinated team of 16 scientists, including junior researchers, to perform quality control tasks; to write grants; deliver science products; and produce peer-reviewed publications.
 	
-    	\item Extracted unprecedented exoplanet population trend with 99.99\% confidence by accounting for sample biases/reliability: see \href{https://exoplanets.nasa.gov/news/1768/discovery-alert-on-our-galaxys-outskirts-a-poverty-of-planets/}{NASA press release}.
+    	\item Extracted unprecedented exoplanet population trend with 99.99\% confidence by accounting for sample biases/reliability using Markov Chain Monte Carlo methods: see \href{https://exoplanets.nasa.gov/news/1768/discovery-alert-on-our-galaxys-outskirts-a-poverty-of-planets/}{NASA press release}.
 	
 	% . I showed that planets are not uniformly distributed about the Milky-way and was highlighted in a \href{https://exoplanets.nasa.gov/news/1768/discovery-alert-on-our-galaxys-outskirts-a-poverty-of-planets/}{NASA press release}.
 	
 	% \item Utilized statistical methods to extract population trends with 99.99\% confidence from an exoplanet dataset, revealing the non-uniform distribution of planets within the Milky Way galaxy, subsequently recognized by NASA and highlighted in a press release.
-	\item Executed k-means clustering analysis to group planet classes, reducing the measurement uncertainty of existing methods by 22\%. 
+	\item Executed K-means clustering analysis with Python/Scikit-learn to group planet classes, reducing the measurement uncertainty of existing methods by 22\%. 
 	
-	\item Implemented Bayesian hierarchical modeling to resolve a 30-year-old planetary formation mystery by identifying an intra-system correlation in giant planet systems.
+	\item Implemented Bayesian hierarchical modeling with PyMC to resolve a 30-year-old planetary formation mystery by identifying an intra-system correlation in giant planet systems.
 	
-	\item Developed Gaussian process regression methodology for robust time-series correlated-noise removal, improving planetary signal recovery by 9X and adopted by 12 independent research groups.
+	\item Developed Gaussian process regression methodology for robust correlated-noise removal, improving planetary signal recovery by 9X and adopted by 12 independent research groups.
 	
-	\item Validated 60 planet signals through conditional survival analysis, concluding that each event had a false-positive likelihood of less than 0.1\%.
+	\item Validated 60 planet signals through conditional survival analysis in R, concluding that each event had a false-positive likelihood of less than 0.1\%.
 	
 	% Identified an intra-system correlation in giant planet systems using Bayesian hierarchical modeling. This work resolved a 30 year old mystery on the origin of Hot Jupiters.
 	
@@ -115,9 +118,9 @@
 \textit{Graduate Researcher} \hfill \textbf{September, 2016 - June, 2021}\newline
 	\begin{list2}
 		\vspace*{-5mm}
-	\item Developed Python algorithm able to search highly contaminated time-series data and identify planet signals with 94\% reliability, resulting in the discovery of 372 planets: see \href{https://www.forbes.com/sites/jamiecartereurope/2021/06/11/we-found-372-new-alien-planets-using-a-long-dead-telescope-say-scientists/}{Forbes} \& \href{https://www.newsweek.com/astronomers-discover-366-new-worlds-gas-giants-kepler-k2-exoplanets-nasa-1653254}{Newsweek} press.
+	\item Developed Python algorithm able to search highly contaminated time series data and identify planet signals with 94\% reliability, resulting in the discovery of 372 planets: see \href{https://www.forbes.com/sites/jamiecartereurope/2021/06/11/we-found-372-new-alien-planets-using-a-long-dead-telescope-say-scientists/}{Forbes} \& \href{https://www.newsweek.com/astronomers-discover-366-new-worlds-gas-giants-kepler-k2-exoplanets-nasa-1653254}{Newsweek} press.
 	
-	\item Implemented random forest regression to characterize $\sim200,000$ stars, resulting in 93\% accuracy of the validation set classification, a 48\% improvement of existing methods.
+	\item Implemented random forest regression with TensorFlow to characterize $\sim200,000$ stars, resulting in 93\% accuracy of the validation set classification, a 48\% improvement of existing methods.
 	
 	
 	% Executed memory intensive simulation 12X faster than previous researchers by applying parallel code structure to open-source code.
@@ -133,7 +136,7 @@
 
 \section{Software Development}
 	\begin{list2}
-	\item Produced open-source Python package able to parse exoplanet signals from statistical fluctuations in time-series data, used by $27$ independent research groups: see \href{https://github.com/jonzink/EDI_Vetter_unplugged}{EDIunplugged} on Github.
+	\item Produced open source Python package able to parse exoplanet signals from statistical fluctuations in time series data, used by $27$ independent research groups: see \href{https://github.com/jonzink/EDI_Vetter_unplugged}{EDIunplugged} on Github.
 	
 	\item Developed forward modeling software in Python and R (\href{https://github.com/jonzink/ExoMult}{ExoMult}), enabling direct assessment, via sample biased Monte Carlo simulations, of complex intra-system correlations.
 	
@@ -145,7 +148,7 @@
 	\end{list2}
 	
 
-\vspace*{-2mm}
+\vspace*{-4mm}
 % \textbf{Dept. of Physics and Astronomy, Texas A\&M University} \hfill College Station, Texas\newline
 % \textit{Ph.D Candidate} \hfill \textbf{August, 2010 - 2016}\newline
 %     \begin{list2}
@@ -184,11 +187,12 @@
 % \vspace*{-1mm}
 
 \section{Skills}
-\textbf{Machine Learning:} Random Forest, SVM, PCA, Clustering; Supervised and Reinforcement Learning\\ 
-\textbf{Statistical Methods:} Bayesian, Time-Series, Error, and Survival Analysis; Hypothesis Testing, Monte Carlo Methods, Forward Modeling, EDF Testing, and Order Statistics\\
-\textbf{Software and Computing:} Open Source Contributor, Python, R, SQL, HTML, PyMC, TensorFlow, \\ Scikit-learn, and Object-Oriented Coding \\
+\textbf{Machine Learning:} SVM, PCA, Supervised Learning, and Deep Learning\\ 
+% \textbf{Statistical Methods:} Error Analysis and Hypothesis Testing\\
+\textbf{Software and Computing:} SQL, HTML, multi-threading, and Object-Oriented Coding \\
+\textbf{Professional:} 17 publications and 43 presentations for both technical/non-technical audiences
 % \textbf{Leadership:} Experience organizing and leading workshops and collaboration meetings, Teaching and mentoring junior team members, Eagle Scout. \\
-\vspace*{-7mm}
+\vspace*{-3mm}
 % \noindent\rule{8cm}{0.4pt}
 
 % \fullline{		% hrules only listen to \hoffset
